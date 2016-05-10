@@ -1,0 +1,785 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Lean UX - TAG Innovation School - UX Design Master - Marco Dussin</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/tag.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">
+
+		<link rel="stylesheet" href="bower_components/flipclock/compiled/flipclock.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section data-background-video="assets/Coro dei pompieri.mp4">
+					<h1>Lean UX Workshop</h1>
+					<br><br>
+					<img src="assets/logo.png">
+				</section>
+				<section data-background="#EC7760" class="tag-background">
+					<h2>UX Design Master</h2>
+					<h4>TAG Innovation School</h4>
+					<h4>Marco Dussin</h4>
+					<h5><i class="fa fa-envelope"></i> marco@duss.in - <a href="http://twitter.com/marcodussin"><i class="fa fa-twitter" aria-hidden="true"></i> @MarcoDussin</a></h5>
+				</section>
+				<section>
+					<h2>Qualcosa su di me</h2>
+					<img data-src="assets/marco.jpg"/>
+					<p>Front and Back End Engineer, Coworker @ TAG Padova, Product Designer, Beer Lover</p>
+					<p><i class="fa fa-comments"></i> http://marco.duss.in</p>
+					<p><i class="fa fa-linkedin-square"></i> it.linkedin.com/in/marcodussin/</p>
+				</section>
+				<section data-background="#ffc107" class="tag-background">
+					<h2>Qualcosa su di voi</h2>
+				</section>
+
+
+				<section>
+					<section data-background="#EC7760" class="tag-background">
+						<h2>Slide rossa</h2>
+						<p>Titolo di una sezione</p>
+					</section>
+					<section>
+						<h2>Slide bianca</h2>
+						<p>Spunti di discussione</p>
+					</section>
+					<section data-background="#8bc34a" class="tag-background">
+						<h2>Slide verde</h2>
+						<p>Question time</p>
+					</section>
+					<section data-background="#ffc107" class="tag-background">
+						<h2>Slide gialla</h2>
+						<p>Workshop time</p>
+					</section>
+				</section>
+
+				<section>
+					<section data-background="#EC7760" class="tag-background">
+						<h2>Time and space</h2>
+						<img src="assets/time_timer.jpg" class="stretch">
+					</section>
+
+					<section>
+						<img src="assets/sprintbook.jpg" class="stretch">
+					</section>
+
+					<section>
+						<p>La frammentazione fa male alla produttività: serve una media di 23 minuti perchè un lavoratore distratto torni al proprio task</p>
+					</section>
+
+					<section>
+						<p>Meeting infiniti e continui fanno male alla produttività</p>
+					</section>
+
+					<section>
+						<p>Il <strong>"context switch"</strong> fa male alla produttività</p>
+					</section>
+
+					<section>
+						<p>Esempio di impostazione del lavoro in "time boxes"</p>
+						<ul>
+							<li class="fragment">Scegli un’attività da completare.
+							<li class="fragment">Imposta il timer a 25 minuti
+							<li class="fragment">Lavora sulla tua attività senza distrazioni finché il timer non avrà suonato.
+							<li class="fragment">Prenditi una pausa di 5 minuti.
+							<li class="fragment">Ogni 4 “boxes” prenditi una pausa più lunga di 15-30 minuti.
+						</ul>
+					</section>
+
+					<section data-background="#8bc34a" class="tag-background">
+						<h2>Come lavorare in gruppo?</h2>
+					</section>
+
+					<section>
+						<p>"Stand Up Meetings"</p>
+						<img class="stretch" src="assets/standingup.jpg">
+					</section>
+
+					<section>
+						<p>Alcuni consigli per la discussione</p>
+						<ul>
+							<li>Usare poca tecnologia, preferire oggetti materiali (pennarelli, post-it...)
+							<li>Esplicitare le fasi divergenti e quelle convergenti
+							<li>Separare le discussioni di business da quelle tecnologiche
+							<li>Immaginare la demo
+							<li>Coinvolgere tutti i ruoli aziendali
+							<li>Misurare l'allineamento usando esercizi di feedback
+						</ul>
+					</section>
+				</section>
+
+
+				<section>
+					<section>
+						<h2>Il menu di oggi</h2>
+						<table>
+							<thead>
+							<tr>
+								<th>Argomento</th>
+								<th>Boxes</th>
+							</tr>
+							</thead>
+							<tr>
+								<td>Tempo già passato</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>Ripasso di ergonomia cognitiva</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>Introduzione al percorso Lean UX</td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>Supposizioni vs requisiti</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>Ipotesi</td>
+								<td>1</td>
+							</tr>
+						</table>
+					</section>
+
+					<section>
+						<table>
+							<tr>
+								<td>Dichiarare le supposizioni con le personas</td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>Dichiarare i risultati attesi e il modo per misurarli</td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>MVP</td>
+								<td>4</td>
+							</tr>
+							<tr>
+								<td>Varie, domande, blablabla</td>
+								<td>1</td>
+							</tr>
+							<tfoot>
+							<tr>
+								<td style="border-top:thin solid white;">Totale</td>
+								<td style="border-top:thin solid white;">15</td>
+							</tr>
+							</tfoot>
+						</table>
+					</section>
+				</section>
+
+				<section>
+					<section data-background="#EC7760" class="tag-background">
+						<h2>Ripasso di ergonomia cognitiva</h2>
+					</section>
+
+					<section>
+						<p class="fragment">Il termine "Ergonomia" è stato usato per la prima volta da Wojciech Jastrzębowski in un giornale polacco nel 1857</p>
+						<br>
+						<h3>Ergonomia: dal greco <i>érgon</i> (lavoro) e <i>ńomos</i> (regola, legge)</h3>
+						<br>
+						<p class="fragment">Nel 1949 lo psicologo K. F. H. Murrell diede al termine il significato attuale:</p>
+					</section>
+
+					<section>
+						<blockquote>...è quella scienza che si occupa dell'interazione tra gli elementi di un sistema (umani e d'altro tipo) e la funzione per cui vengono progettati (nonché la teoria, i principi, i dati e i metodi che vengono applicati nella progettazione), allo scopo di migliorare la soddisfazione dell'utente e l'insieme delle prestazioni del sistema </blockquote>
+						<small class="rosso">I.E.A. (International Ergonomics Association)</small>
+					</section>
+
+					<section>
+						<img class="stretch" data-src="assets/chicago.jpg"/>
+						<blockquote>Science Finds, Industry Applies, Man Conforms (La scienza scopre. L'industria applica. L'uomo si adegua)</blockquote>
+						<small class="rosso">Motto della Chicago World's Fair del 1933</small>
+					</section>
+
+					<section>
+						<img class="stretch" data-src="assets/model302.jpg"/>
+						<h4>Henry Dreyfuss, Model 302 Telephone, 1937</h4>
+					</section>
+
+					<section>
+						<img class="stretch" data-src="assets/model500.jpg"/>
+						<h4>Henry Dreyfuss, Model 500 Telephone, 1953</h4>
+					</section>
+
+					<section>
+						<img class="stretch" data-src="assets/dreyfuss-joe.jpg"/>
+						<h4>Henry Dreyfuss, Designing for People, 1955</h4>
+					</section>
+
+					<section>
+						<img class="stretch" data-src="assets/caffettiera.jpg"/>
+					</section>
+
+					<section>
+						<p>I principi che un buon design dovrebbe seguire sono:</p>
+						<ul>
+							<li>fornire visibilità;
+							<li>fornire un buon mapping;
+							<li>fornire inviti e vincoli all'uso;
+							<li>fornire feedback;
+							<li>fornire consistenza;
+							<li>fornire un buon modello concettuale.
+						</ul>
+					</section>
+
+					<section>
+						<img class="stretch" data-src="assets/princess_phone.jpg"/>
+						<h4>Henry Dreyfuss, Princess Telephone, 1959</h4>
+					</section>
+
+					<section>
+						<img class="stretch" data-src="assets/emotional.jpg"/>
+					</section>
+
+					<section>
+						<img class="stretch" data-src="assets/BeautifulUsers_RGB_hires.jpg"/>
+					</section>
+
+					<section>
+						<img class="stretch" data-src="/assets/usercenteredbook.jpg">
+
+					</section>
+
+					<section>
+						<h3>Modelli di interazione (1)</h3>
+						<p>Donald Norman stabilisce <i>7 stadi dell'azione</i>:</p>
+						<ol>
+							<li class="fragment">L'utente stabilisce lo <i>scopo</i></li>
+							<li class="fragment">L'utente formula l'<i>intenzione</i></li>
+							<li class="fragment">L'utente <i>specifica</i> le azioni da compiere tramite l'interfaccia</li>
+							<li class="fragment">Il sistema <i>esegue</i> l'azione</li>
+							<li class="fragment">L'utente <i>percepisce</i> lo stato del sistema</li>
+							<li class="fragment">L'utente <i>interpreta</i> lo stato del sistema</li>
+							<li class="fragment">L'utente <i>valuta</i> lo stato del sistema rispetto allo scopo</li>
+						</ol>
+						<p class="fragment">Esecuzione e valutazione sono in un loop continuo</p>
+					</section>
+
+					<section>
+						<h3>Modelli di interazione (2)</h3>
+						<p>Secondo Norman alcuni sistemi sono più difficili da usare di altri perchè ci si trova ad annaspare nell'attraversare:</p>
+						<ul>
+							<li class="fragment">
+								il <b class="rosso">golfo dell'esecuzione</b>: quando la formulazione delle azioni da parte dell'utente non
+								coincide con le azioni permesse dal sistema
+							</li>
+							<li class="fragment">
+								il <b class="rosso">golfo della valutazione</b>: quando le aspettative di cambiamento sullo stato del sistema da
+								parte dell'utente sono diverse dallo stato raggiunto dal sistema stesso
+							</li>
+						</ul>
+					</section>
+
+				</section>
+
+
+				<section>
+					<section data-background="#EC7760" class="tag-background">
+						<h2>Introduzione al percorso Lean UX</h2>
+						<img class="stretch" data-src="assets/lean-ux.gif">
+					</section>
+
+					<section>
+						<h1>11,6 secondi</h1>
+						<p>(Jon Jenkins, Velocity 2011, https://youtu.be/dxk8b9rSKOo)</p>
+					</section>
+
+					<section>
+						<h3>Sviluppo agile di software</h3>
+						<small>
+							Stiamo scoprendo modi migliori di creare software,<br>
+							sviluppandolo e aiutando gli altri a fare lo stesso.<br>
+							Grazie a questa attività siamo arrivati a considerare importanti:<br>
+							<br>
+							Gli individui e le interazioni <b>più che</b> i processi e gli strumenti<br>
+							Il software funzionante <b>più che</b> la documentazione esaustiva<br>
+							La collaborazione col cliente <b>più che</b> la negoziazione dei contratti<br>
+							Rispondere al cambiamento <b>più che</b> seguire un piano<br>
+							<br>
+							Ovvero, fermo restando il valore delle voci a destra,<br>
+							consideriamo più importanti le voci a sinistra.
+						</small>
+					</section>
+
+					<section>
+						<h2>Che cosa è la "lean production"?</h2>
+						<img class="stretch" data-src="assets/toyotabook.jpg">
+					</section>
+
+					<section>
+						<img src="assets/Toyota-Production-System-Standards-Lowered-TPS-house-650x430.jpg" class="stretch">
+						<p>Toyota Production System (TPS)</p>
+					</section>
+
+					<section>
+						<img src="assets/kaizen.png" class="stretch">
+						<p>Miglioramento Continuo (Kaizen)</p>
+					</section>
+
+					<section>
+						<img src="assets/kanban_img.jpg" class="stretch">
+						<p>Kanban</p>
+					</section>
+
+					<section>
+						<img src="assets/kanban_anderson.png" class="stretch">
+						<p>Kanban, David J. Anderson, 2007</p>
+					</section>
+
+					<section>
+						<img src="assets/kanban-wip.png" class="stretch">
+						<p>Kanban board (immagine di @ziobrando)</p>
+					</section>
+
+					<section data-background="#ffc107" class="tag-background">
+						<h2>Kanban game</h2>
+						<br>
+						<table width="100%">
+							<tr>
+								<td>
+									<div class="clockA"></div>
+									<button onclick="startClock('A')">Start</button>
+									<button onclick="firstClock('A')">First arrived</button>
+									<button onclick="stopClock('A')">All arrived</button>
+									<div id="firstA"></div>
+								</td>
+								<td>
+									<div class="clockB"></div>
+									<button onclick="startClock('B')">Start</button>
+									<button onclick="firstClock('B')">First arrived</button>
+									<button onclick="stopClock('B')">All arrived</button>
+									<div id="firstB"></div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div id="firstA"></div>
+								</td>
+								<td>
+									<div id="firstB"></div>
+								</td>
+							</tr>
+						</table>
+					</section>
+
+					<section>
+						<h2>Che cosa è il metodo "lean startup"?</h2>
+						<img class="stretch" data-src="assets/Eric-Ries-Lean-Startup.jpg">
+					</section>
+
+					<section>
+						<blockquote>
+							The Lean Startup methodology has as a premise that every startup is a grand experiment that attempts to answer a question. The question is not "Can this product be built?" Instead, the questions are "Should this product be built?" and "Can we build a sustainable business around this set of products and services?" This experiment is more than just theoretical inquiry; it is a first product
+						</blockquote>
+						<p>Eric Ries</p>
+					</section>
+
+					<section>
+						<p>NON costruiamo oggetti che la gente NON vuole</p>
+						<img class="stretch" data-src="assets/hereyougograndma.png">
+					</section>
+
+					<section>
+						<img class="stretch" data-src="assets/Build-Meaure-Learn.png">
+					</section>
+
+					<section>
+						<h2>Che cosa è la "lean UX"?</h2>
+						<p>Il concetto di Lean UX nasce dal mettere assieme i principi di Lean Startup con le teorie di sviluppo agile di software.
+							In aggiunta a queste due fondamenta, ce n'è una terza altrettanto importante: il Design Thinking come metodo adatto a fornire soluzioni pratiche e creative ai problemi.</p>
+					</section>
+
+
+					<section>
+						<img class="stretch" src="assets/Lean-UX-Agile-UX.png">
+					</section>
+
+					<section>
+						<h2>Che cosa è la "lean UX"?</h2>
+						<p>In aggiunta ai "pilastri" precedenti, la Lean UX pone meno enfasi nei "DELIVERABLES" e si focalizza maggiormente sulla comprensione condivisa dell'esperienza utente che si desidera fornire</p>
+					</section>
+
+					<section>
+						<img class="stretch" data-src="assets/lean-ux-building-a-shared-understanding-to-get-out-of-the-deliverables-business-8-728.jpg">
+					</section>
+
+					<section>
+						<img class="stretch" data-src="assets/lean-ux-building-a-shared-understanding-to-get-out-of-the-deliverables-business-9-728.jpg">
+					</section>
+
+					<section>
+						<img class="stretch" data-src="assets/lean-ux-building-a-shared-understanding-to-get-out-of-the-deliverables-business-10-728.jpg">
+					</section>
+
+					<section>
+						<img class="stretch" data-src="assets/lean-ux-building-a-shared-understanding-to-get-out-of-the-deliverables-business-11-728.jpg">
+					</section>
+
+					<section>
+						<h2>Che cosa è la "lean UX"?</h2>
+						<blockquote>
+							“Lean UX is, at its core, a mindset”
+						</blockquote>
+						<p>Jeff Gothelf</p>
+					</section>
+
+					<section>
+						<h2>La Lean UX coinvolge team</h2>
+						<ul>
+							<li class="fragment">piccoli</li>
+							<li class="fragment">dedicati</li>
+							<li class="fragment">cross-funzionali</li>
+							<li class="fragment">che lavorano in spazi condivisi</li>
+							<li class="fragment">che comunicano tra di loro</li>
+							<li class="fragment">che imparano a rafforzare le proprie relazioni</li>
+						</ul>
+
+					</section>
+
+					<section>
+						<h2>Break down the silos!</h2>
+						<img src="assets/silos.jpg" class="stretch">
+					</section>
+
+					<section>
+						<h2>Il processo di Lean UX</h2>
+						<img class="stretch" data-src="assets/leanuxprocess.png">
+					</section>
+
+					<section>
+						<h2>Lo scopo è far muovere in un percorso parallelo lo sviluppo e il design</h2>
+					</section>
+
+					<section>
+						<p>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/szr0ezLyQHY" frameborder="0" allowfullscreen></iframe>
+						</p>
+						<small>Nordstrom Innovation Lab: Sunglass iPad App Case Study</small>
+					</section>
+
+
+					<section>
+						<h2>In sintesi:</h2>
+						<ul>
+							<li class="fragment">team piccoli e multifunzionali</li>
+							<li class="fragment">designers + biz + developers + ... = 1 team</li>
+							<li class="fragment">la ricerca presso gli utenti è la miglior fonte di informazione</li>
+							<li class="fragment">concentrarsi nel risolvere il problema "giusto"</li>
+							<li class="fragment">generare molte opzioni e decidere velocemente quale perseguire</li>
+							<li class="fragment">riconoscere le ipotesi e validarle</li>
+						</ul>
+
+					</section>
+
+					<section>
+						<h2>Lo scopo è arrivare prima possibile a un "prototipo"</h2>
+						<p>
+							Il prototipo è il modello originale o il primo
+							esemplare di un manufatto, rispetto a una sequenza
+							di eguali o similari realizzazioni successive.
+							Normalmente costruito in modo artigianale e in
+							scala 1:1, sul prototipo verranno effettuati collaudi,
+							modifiche e perfezionamenti, fino al prototipo
+							definitivo, da avviare alla produzione in serie.
+						</p>
+						<p><i>da Wikipedia</i></p>
+					</section>
+
+					<section>
+						<h2>Quindi un prototipo è una primissima versione di una idea?</h2>
+						<h2 class="fragment">Sì, ma con qualcosa in più: è TESTABILE</h2>
+					</section>
+
+					<section>
+						<img src="assets/galilei.jpg" class="stretch">
+					</section>
+
+				</section>
+
+
+				<section>
+					<section data-background="#EC7760" class="tag-background">
+						<h1>1 - Supposizioni vs requisiti</h1>
+					</section>
+					<section>
+						<blockquote>
+							suppórre v. tr. [dal lat. supponĕre, comp. di sub- e ponĕre «porre», propr. «mettere sotto»; il sign. corrente risale al lat. tardo] (coniug. come pórre). –
+							<br>
+							1. Ammettere per congettura; immaginare che una cosa sia o possa verificarsi in un determinato modo; fare una ipotesi che spieghi una realtà comunque osservata[...] anche nel linguaggio matematico e scient., ammettere come ipotesi per trarne conseguenze[...]. Anche, presumere, immaginare[...].
+						</blockquote>
+						<p>Treccani online</p>
+					</section>
+
+					<section>
+						<ul>
+							<li class="fragment">Ogni decisione fatta a proposito dell'offerta del proprio prodotto è una decisione che impatta sull'esperienza del destinatario di tale prodotto</li>
+							<li class="fragment">Prioritizziamo il processo di apprendimento piuttosto che quello di crescita</li>
+							<li class="fragment">Le proprie supposizioni vanno dichiarate per poter essere testate</li>
+							<li class="fragment">Prioritizziamo il fare piuttosto che l'analisi</li>
+							<li class="fragment">Valutiamo i nostri risultati in modo continuo, e preparati anche a repentini cambi di rotta</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Dichiarare le proprie supposizioni</h2>
+						<p>Quali sono le supposizioni a proposito dei nostri utenti/acquirenti/clienti (i loro bisogni e le nostre soluzioni) che abbiamo posto a fondamento del progetto, e che, se confutate, ci porteranno al fallimento?</p>
+					</section>
+
+					<section>
+						<p>Esempi di supposizioni</p>
+						<ul>
+							<li class="fragment">Come acquisiremo nuovi clienti?</li>
+							<li class="fragment">Come guadagneremo nuova liquidità?</li>
+							<li class="fragment">Chi sono i nostri competitor?</li>
+							<li class="fragment">Che cosa ci differenzia nel mercato?</li>
+							<li class="fragment">Quali sono i nostri rischi? Quale il maggiore?</li>
+							<li class="fragment">Come li supereremo?</li>
+						</ul>
+					</section>
+
+					<section data-background="#8bc34a" class="tag-background">
+						<h2>Un esempio</h2>
+						<ul>
+							<li><a href="http://www.gazzetta.it/Altri-Mondi/28-05-2015/gazzetta-sport-resta-quotidiano-piu-letto-italia-dati-audipress-copie-digitali-1101021810883.shtml?refresh_ce-cp" target="_blank">Gazzetta</a>
+							<li><a href="https://www.google.it/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjmhv6cgtDMAhXJa5oKHeikDIsQFggdMAA&url=http%3A%2F%2Fwww.rcscommunicationsolutions.it%2Fsite%2Fhome%2Fmezzi%2Fquotidiani%2Fla-gazzetta-dello-sport%2Fdocumento6275.html&usg=AFQjCNE3m1G1RBpxKeHtNOwEarE1WBCXYA&sig2=4ePjCT3wblEEj61SJagtwQ" target="_blank">analisi dati Gazzetta</a>
+							<li><a href="http://www.repubblica.it/motori/sezioni/wroomen/2015/02/24/news/auto_il_business_donna_sono_loro_le_principali_acquirenti-107989204/" target="_blank">Auto e donne</a>
+						</ul>
+					</section>
+
+					<section data-background="#8bc34a" class="tag-background">
+						<h2>Come validare le idee di prodotto? Come capire "quale" prodotto è desiderato?</h2>
+					</section>
+
+					<section>
+						<img src="assets/validating_product_ideas-front-cover.jpg" class="stretch">
+					</section>
+
+					<section>
+						<img src="assets/sharon_developtimeline.jpg" class="stretch">
+					</section>
+
+					<section>
+						<img src="assets/best_time_questions.jpg" class="stretch">
+					</section>
+
+
+					<section data-background="#ffc107" class="tag-background">
+						<h1>Supposizioni</h1>
+						<ol>
+							<li>Chi è l'utente?</li>
+							<li>Quali risultati sono attesi?</li>
+							<li>Che <i>features</i> sono necessarie per raggiungere tali risultati?</li>
+							<li>Quali risultati di business sono importanti per noi?</li>
+						</ol>
+					</section>
+
+
+
+				</section>
+
+				<section>
+					<section data-background="#EC7760" class="tag-background">
+						<h1>2- Formulazione delle ipotesi</h1>
+					</section>
+
+					<section data-background="#ffc107" class="tag-background" style="text-align: left">
+						<p>Noi crediamo che:
+						<ul>
+							<li><span style="color: red">[facendo questo, con questa feature]</span></li>
+							<li>per <span style="color: red">[questo utente]</span></li>
+							<li>otterremo <span style="color: red">[questo risultato]</span></li>
+						</ul>
+						</p><p>
+						Sapremo che è vero quanto avremo ottenuto
+						<ul>
+							<li><span style="color: red">[questa risposta dal mercato, questo risultato di business]</span></li>
+						</ul>
+						</p>
+					</section>
+
+					<section data-background="#ffc107" class="tag-background">
+						<h2>Clusterizziamo</h2>
+						<ul>
+							<li>per bisogni oppure...
+							<li>per scopi oppure...
+							<li>per preferenze oppure...
+							<li>per obiettivi di business oppure...
+							<li>...
+						</ul>
+					</section>
+
+					<section>
+						<h2>Ordiniamo per priorità</h2>
+						<img src="assets/prioritize_experiments.jpg" class="stretch">
+					</section>
+
+				</section>
+
+				<section>
+					<section data-background="#EC7760" class="tag-background">
+						<h1>3- Identificare le personas</h1>
+					</section>
+					<section data-background="#ffc107" class="tag-background">
+						<img class="stretch" data-src="assets/personas.png">
+					</section>
+				</section>
+
+				<section>
+					<section data-background="#EC7760" class="tag-background">
+						<h1>4- dichiarare i risultati attesi e il modo per misurarli</h1>
+					</section>
+
+					<section>
+						<h2>Che cosa è "avanzamento"?</h2>
+						<ul>
+							<li>Industria manifatturiera: <i>produzione</i> di beni di qualità</li>
+							<li>Agile software: <i>rilascio</i> di software funzionante</li>
+							<li>Lean Startup: <i>validated learning</i>i></li>
+							<li>Lean UX: <i>risultati</i> e loro impatto</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Prodotto, risultato, impatto</h2>
+						<ul>
+							<li class="fragment">Prodotto: "il software che diamo al cliente", "il bene che inscatoliamo e spediamo"</li>
+							<li class="fragment">Risultato: "il cambiamento misurabile che abbiamo apportato nelle abitudini del cliente"</li>
+							<li class="fragment">Impatto: "la misura ad alto livello della salute del nostro business"</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Prodotto, risultato, impatto</h2>
+						<ul>
+							<li class="fragment">Prodotto: "la nuova pagina di registrazione del sito"</li>
+							<li class="fragment">Risultato: "numero di utenti che arrivano alla fine del processo di registrazione senza fare errori"</li>
+							<li class="fragment">Impatto: "nuovi utenti registrati in un anno rispetto allo scorso"</li>
+						</ul>
+					</section>
+
+					<section>
+						<img src="assets/pirate-metrics-aarrrprofit-and-key-metrics-to-track-1-638.jpg" class="stretch">
+					</section>
+
+					<section>
+						<img src="assets/aarrr.png" class="stretch">
+					</section>
+
+					<section>
+						<p>AARRR è una metrica codificata da Dave McClure [http://www.slideshare.net/dmc500hats/startup-metrics-for-pirates-long-version]</p>
+						<ul>
+							<li class="fragment">Acquisition: l’acquisizione, quindi portare gli utenti su di un sito da diversi canali.</li>
+							<li class="fragment">Activation: l’utente effettua la sua prima visita sul sito. Importante generare una esperienza utente che sia il più possibile soddisfacente e felice.</li>
+							<li class="fragment">Retention: gli utenti che ritornano, come aumentare la percentuale di ritorno, e come trattarli al meglio quando tornano.</li>
+							<li class="fragment">Referral: quando gli utenti cui piace il prodotto decidono di consigliarlo ad altri, magari anche in cambio di un compenso di qualche tipo.</li>
+							<li class="fragment">Revenue: la parte finale della metrica, da misurare, e usare per iterare sui cinque aspetti, l’utente genera monetizzazione.</li>
+						</ul>
+					</section>
+
+					<section data-background="#ffc107" class="tag-background">
+						<img src="assets/aarrr_dashboard.jpg" class="stretch">
+					</section>
+
+
+				</section>
+
+
+				<section>
+					<section data-background="#EC7760" class="tag-background">
+						<h1>5- MVP</h1>
+					</section>
+
+					<section>
+						<h3>MVP: Minimum Viable Product</h3>
+						<p>Come Groupon iniziò come blog: http://www.nextbigwhat.com/groupon-story-297/</p>
+					</section>
+
+					<section>
+						<img class="stretch" src="assets/What-Is-MVP.jpg">
+					</section>
+
+					<section data-background="#ffc107" class="tag-background">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/0Y3yCQ3ubbg" frameborder="0" allowfullscreen></iframe>
+					</section>
+				</section>
+
+				<section>
+					<h1>THE END</h1>
+					<img class="stretch" src="assets/happiness.jpg">
+					<small>Special thanks to Jeff Gothelf (@jboogie) for his inspiration, siles and suggestions given during his workshop (Jan. 2015) in Bologna</small>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+
+		<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="/bower_components/flipclock/compiled/flipclock.min.js"></script>
+
+		<script>
+			var clockA = $('.clockA').FlipClock({
+				clockFace: 'MinuteCounter',
+				autoStart: false
+			});
+
+			var clockB = $('.clockB').FlipClock({
+				clockFace: 'MinuteCounter',
+				autoStart: false
+			});
+
+			function startClock(c){
+				window['clock'+c].start(function() {
+				});
+			}
+
+			function stopClock(c){
+				window['clock'+c].stop(function() {
+				});
+			}
+
+			function firstClock(c) {
+				var t=window['clock'+c].getTime();
+				$('#first'+c).html(t+"");
+			}
+
+		</script>
+	</body>
+</html>
